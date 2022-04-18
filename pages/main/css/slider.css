@@ -1,0 +1,28 @@
+.swiper {
+	width: 88.4%;	
+	height: 455px;	
+}
+@media (max-width: 768px) {
+	.swiper {
+		width: 84.4%;		
+	 }
+	.arrow-left {		
+		left: 3.9%;		
+	}
+	.arrow-right {		
+		right: 3.9%;		
+	}
+}
+@media (max-width: 767px) {
+	.arrow-left {	
+		top: 76.2%;	
+		left: 21.1%;		
+	}
+	.arrow-right {	
+		top: 76.2%;
+		right: 21.1%;					
+	}
+	.section-bottom-button {		
+		margin: 35.5% auto 0 auto;
+	}
+}
