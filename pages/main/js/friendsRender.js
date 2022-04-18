@@ -116,7 +116,6 @@ const createCard = function (src, name) {
 	return inner.append(slide);
 }
 
-
 for (let item of pets) {
 	let src = item.img;
 	let name = item.name;

@@ -4,8 +4,6 @@ const mySlider = new Swiper('.slider', {
 	loop: true,
 	slidesPerView: 3,
 	slidesPerGroup: 3,
-	// Предзагрузка изображений
-	preloadImages: true,
 	// Скорость прокрутки слайдов
 	speed: 1200,
 	// Включаем/выключаем возможность переключать слайды перетягиванием мыши влево и вправо

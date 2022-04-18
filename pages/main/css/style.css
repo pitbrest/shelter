@@ -71,6 +71,7 @@ p {
 	border-color: var(--color-primary-light);
 	background: var(--color-primary-light);
 	transition: all ease-in-out 0.3s;	
+	background-image:url(/assets/images/png/page2/)
 }
 .wrapper {
 	max-width: 1200px;
