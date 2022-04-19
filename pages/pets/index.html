@@ -5,8 +5,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>shelter project</title>
+	<title>shelter-project pets</title>
 	<link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="../main/css/clear.css">
 	<link rel="stylesheet" href="../pets/css/style.css">
 </head>
@@ -26,8 +27,8 @@
 						<ul class="nav-list">
 							<li><a href="../main/index.html">About the shelter</a></li>
 							<li class="active"><a href="#">Our pets</a></li>
-							<li><a href="../main/index.html#help">Help the shelter</a></li>
-							<li><a href="#footer">Contacts</a></li>
+							<li><a href="#">Help the shelter</a></li>
+							<li><a href="#">Contacts</a></li>
 						</ul>
 					</nav>
 					<div class="header__burger">
@@ -41,9 +42,28 @@
 	<main>
 		<section class="friends">
 			<div class="friends-wrapper">
-				<h2>Our friends who</h2>
-				<h2>are looking for a house</h2>
-				<div class="friends-content">
+				<div class="friends-title">
+					<h2>Our friends who</h2>
+					<h2>are looking for a house</h2>
+				</div>
+
+				<!-- Slider main container -->
+				<div class="swiper pets-swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+
+
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+				</div>
+
+				<!-- <div class="friends-content">
 					<div class="content-item">
 						<img class="item-img" src="../../assets/images/png/page2/pets-katrine.png" alt="img">
 						<p class="item-title">Katrine</p>
@@ -84,7 +104,7 @@
 						<p class="item-title">Freddie</p>
 						<button class="item-button">Learn more</button>
 					</div>
-				</div>
+				</div> -->
 				<div class="content-toggles">
 					<div class="content-toggle-button btn-1"><img src="../../assets/icons/page2/2.svg" alt="img"></div>
 					<div class="content-toggle-button btn-1"><img src="../../assets/icons/page2/1.svg" alt="img"></div>
@@ -170,6 +190,9 @@
 		</div>
 	</footer>
 
+	<script src="../pets/js/friendsRender.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="../pets/js/petsSlider.js"></script>
 	<script src="../pets/js/burger2.js"></script>
 </body>
 
