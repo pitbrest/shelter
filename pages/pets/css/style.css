@@ -66,7 +66,7 @@ h3 {
 	background-color: var(--color-light-s);	
 	transition: all ease-in-out 0.3s;
 }
-.content-item:hover .item-button, .btn-3:Hover {
+.content-item:hover .item-button {
 	border-color: var(--color-primary-light);
 	background: var(--color-primary-light);
 	transition: all ease-in-out 0.3s;
@@ -328,8 +328,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;	
 	margin-bottom: -10px;
-	transition: all ease-in-out 0.3s;	
-
+	transition: all ease-in-out 0.3s;
 }
 .content-item:hover {
 	cursor: pointer;
@@ -354,7 +353,6 @@ nav {
 .swiper {
 	width: 93.7%;
 }
-
 .content-toggles {
 	display: flex;
 	justify-content: center;
@@ -373,19 +371,32 @@ nav {
 	font-size: 20px;
 	line-height: 115%;	
 	letter-spacing: 0.06em;
-	color: var(--color-dark-3xl);
-}
-.btn-1 {
+	color: var(--color-dark-3xl);	
 	border: 2px solid var(--color-dark-s);
+}
+.btn-1.active .btn-img {
+	-webkit-filter: invert(150%);
+	filter: invert(150%);
+}
+.btn-3 .btn-right-img {
+	-webkit-filter: invert(81%);
+	filter: invert(81%);
+}
+.btn-3.active .btn-right-img {
+	-webkit-filter: invert(0);
+	filter: invert(0);
+}
+.content-toggle-button.active {
+	cursor: pointer;
+	border: 2px solid var(--color-primary);	
+}
+.content-toggle-button:Hover.active {
+	border-color: var(--color-primary-light);
+	background: var(--color-primary-light);
+	transition: all ease-in-out 0.3s;
 }
 .btn-2 {
 	background: var(--color-primary);	
-}
-.btn-3 {
-	border: 2px solid var(--color-primary);
-}
-.btn-3:hover {
-	cursor: pointer;
 }
 
 @media (max-width: 900px) {
