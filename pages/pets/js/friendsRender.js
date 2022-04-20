@@ -117,7 +117,7 @@ const createFriend = function (src, name) {
 	return contentInner.append(slide);
 }
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 6; i++) {
 
 	for (let item of friends) {
 		let src = item.img;

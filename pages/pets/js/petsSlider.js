@@ -1,4 +1,4 @@
-const mySliderPets = new Swiper('.pets-swiper', {
+const myPetsSlider = new Swiper('.pets-swiper', {
 
 	grid: {
 		rows: 2,
@@ -9,12 +9,20 @@ const mySliderPets = new Swiper('.pets-swiper', {
 	speed: 1200,
 	// Включаем/выключаем возможность переключать слайды перетягиванием мыши влево и вправо
 	simulateTouch: true,
+	watchSlidesProgress: true,
 
 	// Кнопки "влево" / "вправо"
 	navigation: {
-		nextEl: '.arrow-right',
-		prevEl: '.arrow-left',
+		nextEl: '.step-right',
+		prevEl: '.step-left',
 	},
+	// If we need pagination
+	// pagination: {
+	// 	el: '.btn-2',
+	// 	type: 'fraction',
+
+	// },
+
 
 	breakpoints: {
 		// when window width is >= 320px
@@ -38,4 +46,31 @@ const mySliderPets = new Swiper('.pets-swiper', {
 		}
 	},
 });
+
+
+// const toggleSlideBtns = document.querySelectorAll('.content-toggle-button');
+// const currentSlide = document.querySelector('.btn-2');
+
+// toggleSlideBtns.forEach(item => {
+// 	item.addEventListener('click', (event) => {
+// 		currentSlide.innerHTML = Number(currentSlide.innerHTML) + 1;
+// 	})
+// })
+
+let toExtremeSlide = function () {
+
+	const toLeftSide = document.querySelector('.to-left-side');
+	const toRightSide = document.querySelector('.to-right-side');
+
+	toRightSide.addEventListener('click', e => {
+		myPetsSlider.slideTo(48, 4000);
+	})
+
+	toLeftSide.addEventListener('click', e => {
+		myPetsSlider.slideTo(1, 4000);
+	})
+
+}
+
+toExtremeSlide()
 
