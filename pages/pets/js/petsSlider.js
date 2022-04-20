@@ -17,11 +17,11 @@ const myPetsSlider = new Swiper('.pets-swiper', {
 		prevEl: '.step-left',
 	},
 	// If we need pagination
-	// pagination: {
-	// 	el: '.btn-2',
-	// 	type: 'fraction',
+	pagination: {
+		el: '.btn-2',
+		type: 'fraction',
 
-	// },
+	},
 
 
 	breakpoints: {
@@ -30,14 +30,22 @@ const myPetsSlider = new Swiper('.pets-swiper', {
 			// Кол-во выводимых слайдов одновременно
 			slidesPerView: 1,
 			// Количество одновременно прокручиваемых слайдов за один клик по стрелке
-			slidesPerGroup: 1,
+
 			// Расстояние между карточками
 			spaceBetween: 0,
+			grid: {
+				rows: 1,
+				fill: 'row',
+			},
 		},
 		768: {
 			slidesPerView: 3,
 			slidesPerGroup: 3,
 			spaceBetween: 40,
+			grid: {
+				rows: 1,
+				fill: 'row',
+			},
 		},
 		1280: {
 			slidesPerView: 4,
