@@ -20,7 +20,7 @@ const myPetsSlider = new Swiper('.pets-swiper', {
 	pagination: {
 		el: '.btn-2',
 		type: 'fraction',
-		renderFraction: function (currentClass, totalClass, index, total) {
+		renderFraction: function (currentClass, index) {
 			return '<span class="' + currentClass + '">0 ' + index + ' </span>'
 		},
 
