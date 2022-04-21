@@ -63,6 +63,7 @@ p {
 	font-family: var(--font1);
 	height: 52px;
 	transition: all ease-in-out 0.3s;
+	color: var(--color-dark-3xl);
 }
 .card:hover .button,
 .button:hover,
@@ -71,7 +72,7 @@ p {
 	border-color: var(--color-primary-light);
 	background: var(--color-primary-light);
 	transition: all ease-in-out 0.3s;	
-	background-image:url(/assets/images/png/page2/)
+	background-image: url(/assets/images/png/page2/)
 }
 .wrapper {
 	max-width: 1200px;
@@ -251,9 +252,13 @@ nav {
 		bottom: 3px;
 	}
 	.header__burger.active {
-		transform: translate(-11px, -9px) rotate(270deg);	
-		transition: 0.7s;			
-	}
+		transform: translate(-11px, -9px) rotate(-90deg);
+		transition: 0.7s;
+		-webkit-transform: translate(-11px, -9px) rotate(-90deg);
+		-moz-transform: translate(-11px, -9px) rotate(-90deg);
+		-ms-transform: translate(-11px, -9px) rotate(-90deg);
+		-o-transform: translate(-11px, -9px) rotate(-90deg);
+}
 	.toner {
 		content: '';
 		position: absolute;

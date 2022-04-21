@@ -53,13 +53,15 @@ h3 {
 		letter-spacing: 0.06em;	
 	}
 }
+button {
+	color: var(--color-dark-3xl);
+}
 .item-button {
 	font-family: var(--font1);
 	font-size: 17px;
 	line-height: 130%;
 	letter-spacing: 0.06em;	
-	height: 52px;
-	color: var(--color-dark-3xl);
+	height: 52px;	
 	border: 2px solid var(--color-primary);
 	border-radius: 100px;
 	padding: 0 43px;
@@ -442,7 +444,7 @@ nav {
 		line-height: 284%;
 	}
 	.content-toggles {
-		padding-top: 27.5px;
+		padding-top: 42.5px;
 	}
 	.content-toggle-button {		
 		margin: 0 5px;			

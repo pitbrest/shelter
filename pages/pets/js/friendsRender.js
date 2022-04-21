@@ -120,7 +120,6 @@ let friends = [
 
 for (let i = 0; i < 6; i++) {
 
-
 	for (let item of friends) {
 		let src = item.img;
 		let name = item.name;
