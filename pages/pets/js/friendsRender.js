@@ -1,3 +1,32 @@
+const contentInner = document.querySelector('.swiper-wrapper');
+
+const createFriend = function (src, name) {
+
+	let slide = document.createElement('div');
+	slide.className = "swiper-slide";
+	slide.dataset.name = name;
+	let div = document.createElement('div');
+	div.className = "content-item";
+	div.dataset.name = name;
+	let img = document.createElement('img');
+	img.className = "item-img";
+	img.src = src;
+	let paragraph = document.createElement('p');
+	paragraph.className = 'item-title';
+	paragraph.innerHTML = name;
+	let button = document.createElement('button');
+	button.className = "item-button";
+	button.innerHTML = 'Learn more';
+
+	slide.append(div);
+	div.append(img);
+	div.append(paragraph);
+	div.append(button);
+
+	return contentInner.append(slide);
+}
+
+
 let friends = [
 	{
 		"name": "Katrine",
@@ -89,41 +118,16 @@ let friends = [
 	},
 ];
 
-const contentInner = document.querySelector('.swiper-wrapper');
-
-const createFriend = function (src, name) {
-
-	let slide = document.createElement('div');
-	slide.className = "swiper-slide";
-	slide.dataset.name = name;
-	let div = document.createElement('div');
-	div.className = "content-item";
-	div.dataset.name = name;
-	let img = document.createElement('img');
-	img.className = "item-img";
-	img.src = src;
-	let paragraph = document.createElement('p');
-	paragraph.className = 'item-title';
-	paragraph.innerHTML = name;
-	let button = document.createElement('button');
-	button.className = "item-button";
-	button.innerHTML = 'Learn more';
-
-	slide.append(div);
-	div.append(img);
-	div.append(paragraph);
-	div.append(button);
-
-	return contentInner.append(slide);
-}
-
 for (let i = 0; i < 6; i++) {
+
 
 	for (let item of friends) {
 		let src = item.img;
 		let name = item.name;
 		createFriend(src, name);
 	}
+
+	friends = friends.slice(1).concat([], friends[0]);
 }
 
 

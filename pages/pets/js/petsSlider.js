@@ -23,17 +23,14 @@ const myPetsSlider = new Swiper('.pets-swiper', {
 	breakpoints: {
 		// when window width is >= 320px
 		320: {
-			// Кол-во выводимых слайдов одновременно
 			slidesPerView: 1,
-			// Количество одновременно прокручиваемых слайдов за один клик по стрелке
-
-			// Расстояние между карточками
+			slidesPerGroup: 1,
 			spaceBetween: 40,
 			grid: {
 				rows: 3,
-				column: 1,
 				fill: 'row',
 			},
+			slidesPerColumnFill: 'row',
 		},
 		768: {
 			slidesPerView: 2,
