@@ -93,7 +93,7 @@ main {
 	max-width: 1280px;	
 	width: 100%;
 	z-index: 100;
-	opacity: 0.9;
+	opacity: 0.97;
 }
 .header-logo:hover h1, .header-logo:hover p {
 	color: #fba566;

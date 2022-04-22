@@ -30,11 +30,15 @@
 	justify-content: center;
 	align-items: center;
 	background-color: var(--color-light-s);
-	border-radius: 9px;
+	border-radius: 14px;
 	max-width: 900px;
 	max-height: 500px;
-	height: auto;	
+	height: auto;
 	position: relative;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	-ms-border-radius: 14px;
+	-o-border-radius: 14px;
 }
 .popup__close {
 	position:absolute;
@@ -64,14 +68,14 @@
 }
 .popup__img {	
 	width: 100%;
-	height: auto;
+	height: 500px;
 	border-radius: 9px 0 0 9px;	
 }
 .popup__right-side {		
 	font-family: var(--font1);	
 	color: var(--color-dark);
 	letter-spacing: 0.06em;	
-	padding: 50px 20px 88px 0;
+	padding: 50px 20px 40px 0;
 	align-self: flex-start;
 }
 .popup__title {	

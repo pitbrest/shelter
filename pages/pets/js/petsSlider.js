@@ -3,7 +3,7 @@ const myPetsSlider = new Swiper('.pets-swiper', {
 	// Скорость прокрутки слайдов
 	speed: 1200,
 	// Включаем/выключаем возможность переключать слайды перетягиванием мыши влево и вправо
-	simulateTouch: true,
+	simulateTouch: false,
 	// Кнопки "влево" / "вправо"
 	navigation: {
 		nextEl: '.step-right',
