@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="../main/css/clear.css">
 	<link rel="stylesheet" href="../pets/css/style.css">
+	<link rel="stylesheet" href="../pets/css/popup.css">
 </head>
 
 <body>
@@ -57,13 +58,16 @@
 				</div>
 				<div class="content-toggles">
 					<div class="content-toggle-button btn-1 to-left-side"><img src="../../assets/icons/page2/2.svg"
-						class="btn-img"	alt="img"></div>
-					<div class="content-toggle-button btn-1 step-left"><img src="../../assets/icons/page2/1.svg" class="btn-img" alt="img">
+							class="btn-img" alt="img"></div>
+					<div class="content-toggle-button btn-1 step-left"><img src="../../assets/icons/page2/1.svg"
+							class="btn-img" alt="img">
 					</div>
 					<div class="content-toggle-button btn-2 active">1</div>
-					<div class="content-toggle-button btn-3 step-right active"><img src="../../assets/icons/page2/4.svg" class="btn-right-img" alt="img">
+					<div class="content-toggle-button btn-3 step-right active"><img src="../../assets/icons/page2/4.svg"
+							class="btn-right-img" alt="img">
 					</div>
-					<div class="content-toggle-button btn-3 to-right-side active"><img src="../../assets/icons/page2/3.svg" class="btn-right-img" alt="img">
+					<div class="content-toggle-button btn-3 to-right-side active"><img src="../../assets/icons/page2/3.svg"
+							class="btn-right-img" alt="img">
 					</div>
 				</div>
 			</div>
@@ -144,10 +148,35 @@
 		</div>
 	</footer>
 
+	<div class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="" class="popup__close"><img src="../../assets/images/png/page1/Vector.png" alt="img"></a>
+				<div class="popup__left-side">
+					<img src="#" alt="popup-img" class="popup__img" id="pet-img">
+				</div>
+				<div class="popup__right-side">
+					<div class="popup__title"></div>
+					<div class="popup__subtitle"></div>
+					<div class="popup__text"></div>
+					<div class="popup__character">
+						<ul class="popup__list">
+							<li class="popup__list-item"><b>Age:</b> <span id="age"></span></li>
+							<li class="popup__list-item"><b>Inoculations:</b> <span id="inoculations"></span></li>
+							<li class="popup__list-item"><b>Diseases:</b> <span id="diseases"></span></li>
+							<li class="popup__list-item"><b>Parasites:</b> <span id="parasites"></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="../pets/js/friendsRender.js"></script>
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="../pets/js/petsSlider.js"></script>
 	<script src="../pets/js/burger2.js"></script>
+	<script src="../pets/js/popap.js"></script>
 </body>
 
 </html>
