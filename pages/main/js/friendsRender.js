@@ -124,5 +124,13 @@ for (let item of pets) {
 
 
 
+for (let i = 0; i < 3; i++) {
+
+	for (let item of pets) {
+		let src = item.img;
+		let name = item.name;
+		createCard(src, name);
+	}
+}
 
 

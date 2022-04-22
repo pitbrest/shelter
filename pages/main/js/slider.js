@@ -2,14 +2,14 @@ const mySlider = new Swiper('.slider', {
 
 
 	loop: true,
-	slidesPerView: 3,
-	slidesPerGroup: 3,
 	// Предзагрузка изображений
 	preloadImages: true,
 	// Скорость прокрутки слайдов
 	speed: 1200,
 	// Включаем/выключаем возможность переключать слайды перетягиванием мыши влево и вправо
 	simulateTouch: false,
+	// на 1280+ из-за того что слайдов изначально было 8 включая, после второй прокрутки в 3 слайда, третья прокрутка идет в 2 слайда, этот пункт решает проблему но первая прокрутка идет на 8 слайдов
+	// loopAdditionalSlides: 1,
 
 	// Кнопки "влево" / "вправо"
 	navigation: {
@@ -36,7 +36,6 @@ const mySlider = new Swiper('.slider', {
 			slidesPerView: 3,
 			slidesPerGroup: 3,
 			spaceBetween: 90,
-			loop: true,
 		}
 	},
 });
