@@ -11,11 +11,13 @@
 	left: 0;	
 	opacity: 0;
 	visibility: hidden;
+	transition: opacity 0.4s ease-in-out;
 }
 .popup.open {	
 	opacity: 1;
 	visibility: visible;
 	z-index: 1;
+	transition: opacity 0.4s ease-in-out;
 }
 .popup__body {
 	min-height: 100%;

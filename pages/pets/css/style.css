@@ -197,8 +197,7 @@ nav {
 		justify-content: center;
 		align-items: center;
 		width: 320px;
-		background: var(--color-dark-3xl);
-		padding-top: calc(50vh - 204.5px);
+		background: var(--color-dark-3xl);		
 	}
 	.nav-list li {
 		margin: 20px 0;
@@ -214,7 +213,8 @@ nav {
 		text-align: center;
 	}
 	.header-nav.active {
-		display: block;
+		display: flex;
+		align-items: center;
 		position: fixed;
 		top: 0;
 		right: 0;			
@@ -255,7 +255,7 @@ nav {
 		bottom: 3px;
 	}
 	.header__burger.active {
-		transform: translate(-11px, -9px) rotate(270deg);	
+		transform: translate(-11px, -9px) rotate(-90deg);	
 		transition: 0.7s;			
 	}
 	.header__burger.active.header__burger span,
